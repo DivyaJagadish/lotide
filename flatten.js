@@ -32,4 +32,7 @@ const flatten = function(array1)
   }
   return outputarray;
 };
+
+module.exports = flatten;
+
 assertArraysEqual(flatten([1,2,3,[4,5],8]), [1,2,3,4,5,8] );

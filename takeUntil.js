@@ -27,6 +27,7 @@ if (eqArrays(array1,array2)) {
   console.log(`⛔️⛔️Arrays are not equal: ${array1} !== ${array2}`);
 }
 };
+module.exports = takeUntil;
 
 // Test cases
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

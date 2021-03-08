@@ -13,6 +13,8 @@ const findKeyByValue = function(object1,value) {
     }
   }
 };
+
+module.exports =findKeyByValue;
 // Testcases
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
