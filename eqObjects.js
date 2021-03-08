@@ -27,7 +27,12 @@ const eqObjects = function(object1, object2) {
        if(check === false) {
          return false;
        }
-      } else if (object1[keys] !== object2[keys]) { //check for primitives
+      }else if(typeof(object1[keys])=== "object"){
+        const check = eqObjects(object1[keys],object2[keys]);
+        if( check === false) {
+          return false;
+        }
+      }else if (object1[keys] !== object2[keys]) { //check for primitives
          return false;
       }
     } return true;
@@ -35,6 +40,16 @@ const eqObjects = function(object1, object2) {
     return false;
   }
 };
+
+// Test cases
+assertEqual(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), true) ;// => true
+
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false) ;// => false
+assertEqual(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }),false);// => false
+assertEqual(eqObjects({a:{y:{a:1,b:1}}},{a:{y:{a:1,b:1}}}),true);
+assertEqual(eqObjects({a:{y:{a:1,b:1}}},{a:{y:1}}),false);
+
+
 
 
 // Test cases
