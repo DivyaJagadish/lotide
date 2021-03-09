@@ -32,7 +32,7 @@ const letterPositions = function(sentence) {
 };
 module.exports = letterPositions;
 // Test cases
-const hello = letterPositions("hello");
-assertArraysEqual (hello.e,[1]);
-assertArraysEqual(hello.l,[2,3]);
-assertArraysEqual(hello.e,[0]);
+// const hello = letterPositions("hello");
+// assertArraysEqual (hello.e,[1]);
+// assertArraysEqual(hello.l,[2,3]);
+// assertArraysEqual(hello.e,[0]);

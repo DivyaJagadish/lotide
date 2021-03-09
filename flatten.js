@@ -35,4 +35,4 @@ const flatten = function(array1)
 
 module.exports = flatten;
 
-assertArraysEqual(flatten([1,2,3,[4,5],8]), [1,2,3,4,5,8] );
+// assertArraysEqual(flatten([1,2,3,[4,5],8]), [1,2,3,4,5,8] );
