@@ -25,8 +25,3 @@ if (eqArrays(array1,array2)) {
 };
 
 module.exports = map;
-// const words = ["ground", "control", "to", "major", "tom"];
-// assertArraysEqual(map(words, word => word[0]),["g"]);
-// assertArraysEqual(map(words,word => word[1]),["r","o","o","a","o"]);
-// assertArraysEqual(map(words, word => word.length),[6,7,2,5,3]);
-
