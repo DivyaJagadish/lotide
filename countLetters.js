@@ -2,6 +2,9 @@
 const countLetters =function(string1){
   const result1 ={};
   let  noSpaces = string1.split(" ").join("");
+  if (noSpaces.length === 0) {
+    return 0;
+  }
   for ( const char of noSpaces){
     if(result1[char])
     {
@@ -12,5 +15,4 @@ const countLetters =function(string1){
   }
   return result1;
 };
-// console.log(countLetters("asdasdasdfdfgg"));
 module.exports =countLetters;

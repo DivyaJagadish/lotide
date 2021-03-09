@@ -33,9 +33,7 @@ The following functions are currently implemented:
 *  `assertEqual` :compare two values and assert Equal
 *  `assertObjectsEqual` : Asserts whether the Object are Equal or not.
 * `countLetters`: Take in a sentence (as a string) and then return a count of each of the letters in that sentence.
-
-.
-* `countOnly` : countOnly needs to return a proper report on all the strings found in the input array, and their respective counts only when it meets the condition.
+* `countOnly` : countOnly needs to return a proper report on all the strings found in the input array, and their respective counts only when it meets the  truthy condition.
 * `eqArrays`:Check whether arrays are Equal
 * `eqObjects`: Check whether Objects are Equal
 * `findKey `:Takes in an object and a callback. It should scan the object and return the first key for which the callback returns a truthy value. If no key is found, then it should return undefined.
